@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ракурс</title>
+    <link rel="icon" type="image/x-icon" href="promt/favicon.png">
+    <meta name="description" content="Профессиональная разработка сайтов: лендинги, корпоративные сайты, интернет-магазины. Сайты которые работают!">
+    <meta name="keywords" content="разработка сайтов, веб-студия, лендинг, интернет-магазин, Ракурс">
+    <meta name="author" content="Ракурс">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top header-top">
+            <div class="container">
+                <div class="logo navbar-brand">
+                    <img src="promt/logo.png" alt="Логотип" height="60">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#price" class="nav-button nav-link">Прайс лист</a>
+                        <a href="#about" class="nav-button nav-link">О нас</a>
+                        <a href="#developer" class="nav-button nav-link">Разработчик</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="header-banner">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="banner-content">
+                            <h1 class="banner-title">Сайты которые работают</h1>
+                            <p class="banner-text">Код который работает на вас</p>
+                            <button class="banner-button btn" onclick="window.open('https://yandex.ru/video/preview/13270786585055671216?text=Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up&path=yandex_search&parent-reqid=1761500950659052-13135624088751303110-balancer-l7leveler-kubr-yp-vla-161-BAL&from_type=carousel', '_blank')">Не нажимать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-company" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6">
+                    <div class="about-text">
+                        <h2 class="about-title">О компании</h2>
+                        <p class="about-description">
+                            Мы — команда «Ракурс», и мы видим цифровой мир под правильным углом. Наша цель — создавать не просто сайты и приложения, а полноценные инструменты для вашего успеха. От яркого лендинга до сложной CRM-системы, от настройки ПО до установки «цифрового фундамента» в виде ОС — мы предлагаем комплексный взгляд на ваши IT-задачи.
+                        </p>
+                        <p class="about-description">
+                            Мы не делаем вещи, мы их продаём...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-photo text-center" onclick="window.open('https://vk.com/id66419780', '_blank')" style="cursor: pointer;">
+                        <div class="director-photo mx-auto">
+                            <img src="promt/alex.png" alt="Директор компании" class="img-fluid">
+                        </div>
+                        <div class="director-info mt-3">
+                            <h3 class="director-name">Алексей Каратаев</h3>
+                            <p class="director-position">Директор компании</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-photo-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="full-photo-container">
+                        <img src="promt/pr.png" alt="Фотография" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-section" id="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="price-left text-center text-md-start">
+                        <h2 class="price-title">Прайс лист</h2>
+                        <button class="price-button btn" onclick="window.location.href='services.html#services-list'">Перейти</button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="price-right">
+                        <div class="service-item">
+                            <h3 class="service-name">Лендинг</h3>
+                            <p class="service-desc">Одностраничный сайт для презентации продукта</p>
+                        </div>
+                        <div class="service-item">
+                            <h3 class="service-name">Корпоративный сайт</h3>
+                            <p class="service-desc">Многостраничный сайт для вашего бизнеса</p>
+                        </div>
+                        <div class="service-item">
+                            <h3 class="service-name">Интернет-магазин</h3>
+                            <p class="service-desc">Полнофункциональная платформа для онлайн-продаж</p>
+                        </div>
+                        <div class="service-item">
+                            <h3 class="service-name">Веб-приложение</h3>
+                            <p class="service-desc">Сложные системы с базой данных и API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-left">
+                        <div class="footer-logo mb-3">
+                            <img src="../promt/logo.png" alt="Логотип Ракурс" height="50">
+                        </div>
+                        <p class="footer-tagline">Сайты которые работают</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-center">
+                        <h4 class="footer-title">Услуги</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#price">Лендинги</a></li>
+                            <li><a href="#price">Корпоративные сайты</a></li>
+                            <li><a href="#price">Интернет-магазины</a></li>
+                            <li><a href="#price">Веб-приложения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="footer-right">
+                        <h4 class="footer-title">Контакты</h4>
+                        <div class="footer-contacts mb-3">
+                            <p>📧 racourse22</p>
+                            <p>📞 +7 (999) 123-45-67</p>
+                            <p>площадь Советов, Барнаул</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" class="social-link me-3">Telegram</a>
+                            <a href="#" class="social-link me-3">VK</a>
+                            <a href="#" class="social-link">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom text-center pt-3">
+                        <p>&copy; 2025 Ракурс. Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/homepage.js"></script>
+</body>
+</html>

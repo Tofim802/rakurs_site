@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jura', sans-serif;
+    background: white;
+}
+
+.services-header {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: url('../promt/banner_sv.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.services-header-top {
+    height: 100px;
+    background: rgba(139, 13, 38, 0.541) !important;
+    transition: background-color 0.3s ease;
+}
+
+.services-header-top.scrolled {
+    background: rgba(178, 34, 34, 0.445) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.services-nav-button {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.1rem;
+    color: white !important;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.services-nav-button:hover {
+    transform: translateY(-2px);
+    color: #009B77 !important;
+}
+
+.services-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.services-banner-title {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: normal;
+    color: white;
+}
+
+.services-banner-text {
+    font-family: 'Jura', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    font-weight: 400;
+    color: white;
+}
+
+.stats-section {
+    background: #75071b;
+    padding: 60px 0;
+    color: white;
+}
+
+.stat-number {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.stat-label {
+    font-family: 'Jura', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 400;
+}
+
+.full-photo-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.full-photo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.full-photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-list {
+    padding: 80px 0;
+    background: #003a35;
+    position: relative;
+    z-index: 1;
+}
+
+.services-section-title {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.service-card {
+    background: #00201e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.service-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+}
+
+.service-name {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #b9b5b5;
+}
+
+.service-description {
+    font-family: 'Jura', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.service-price {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: 1.8rem;
+    color: #009B77;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-button {
+    width: 100%;
+    padding: 12px;
+    background: #009B77;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Jura', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.service-button:hover {
+    background: #007a5e;
+    transform: translateY(-2px);
+}
+
+.footer {
+    background: #000706;
+    color: white;
+    padding: 50px 0 0;
+}
+
+.footer-tagline {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.footer-title {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #9b0000;
+}
+
+.footer-contacts p {
+    margin-bottom: 10px;
+    font-family: 'Jura', sans-serif;
+    color: #ccc;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #009B77;
+}
+
+.footer-bottom {
+    border-top: 1px solid #005a4f;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    font-family: 'Jura', sans-serif;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Стили для Bootstrap модальных окон */
+.modal-content {
+    background-color: #00201e;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #005a4f;
+    padding: 20px 30px;
+}
+
+.modal-title {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+.btn-close {
+    filter: invert(1);
+    opacity: 0.7;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-info h3 {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #009B77;
+}
+
+.modal-info ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.modal-info li {
+    font-family: 'Jura', sans-serif;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.modal-info li:before {
+    content: "✓";
+    color: #009B77;
+    position: absolute;
+    left: 0;
+}
+
+.modal-price {
+    font-family: 'WDXL Lubrifont SC', sans-serif;
+    font-size: 2rem;
+    color: #009B77;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-time {
+    font-family: 'Jura', sans-serif;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.modal-project-button {
+    background: #009B77;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    width: 100%;
+}
+
+.modal-project-button:hover {
+    background: #007a5e;
+    transform: translateY(-2px);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .services-header-top {
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .navbar-collapse {
+        background: rgba(139, 13, 38, 0.9);
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        margin-top: 10px;
+    }
+    
+    .services-nav-button {
+        padding: 10px 0 !important;
+        display: block;
+        text-align: center;
+    }
+    
+    .banner-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .services-banner-title {
+        text-align: center;
+    }
+    
+    .services-banner-text {
+        text-align: center;
+    }
+    
+    .services-banner {
+        padding-top: 80px;
+    }
+    
+    .stats-section {
+        padding: 40px 0;
+    }
+    
+    .stat-item {
+        margin-bottom: 30px;
+    }
+    
+    .full-photo-section {
+        height: 40vh;
+    }
+    
+    .services-list {
+        padding: 40px 0;
+    }
+    
+    .service-card {
+        margin-bottom: 20px;
+    }
+    
+    .footer {
+        padding: 40px 0 0;
+    }
+    
+    .modal-body .row {
+        flex-direction: column;
+    }
+    
+    .modal-image {
+        margin-bottom: 20px;
+    }
+    
+    .modal-header {
+        padding: 15px 20px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-banner {
+        height: 70vh;
+    }
+    
+    .services-section-title {
+        margin-bottom: 30px;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+}
